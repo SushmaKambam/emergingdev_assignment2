@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <meta charset="UTF-8">
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+        <button onclick="save()">💾</button>
+        <button onclick="discard()">🗑️</button>
+        <div class='dropdown'>
+            Speed
+            <select name="mutationAmount" id="mutationAmount" 
+                onchange="localStorage.setItem('mutationAmount',this.value)">
+                <option value="0.5">0.5</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+
+                <option value="1.5">1.5</option>
+            </select>
+        </div>
+        <div class='dropdown'>
+            🚗
+            <select name="carCount" id="carCount" 
+                onchange="localStorage.setItem('carCount',this.value)">
+                <option value="1" selected>1</option>
+                <option value="10">10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    <script src="js/visualizer.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/sensor.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/road.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/car.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
