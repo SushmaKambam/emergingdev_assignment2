@@ -1,0 +1,196 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    font-family: Calibri, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #212121;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.form-container .logo-container {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-container .form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.form-container .form-group input,
+.form-container .form-group select,
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Calibri, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container .form-group input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-container .form-group input[type="number"]::-webkit-outer-spin-button,
+.form-container .form-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-container .form-group select {
+    background-color: #fff;
+    color: #000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    cursor: pointer;
+}
+
+.form-container .form-group select::-ms-expand {
+    display: none;
+}
+
+.form-container .form-group select option {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group select:focus,
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #1778f2;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #313131;
+}
+
+.form-container .form-submit-btn:active {
+    scale: 0.95;
+}
+
+.form-container .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.form-container .success-message {
+    color: #008000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container .prediction-message {
+    color: blue;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.form-container .predicted-price,
+.form-container .actual-price {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.form-container .predicted-price {
+    color: #1778f2;
+}
+
+.form-container .actual-price {
+    color: #4CAF50;
+}
+
+
+.form-container .form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Calibri, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    cursor: pointer;
+}
+
+.form-container .form-group select::-ms-expand {
+    display: none;
+}
+
+.form-container .form-group select option {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+}
+
+

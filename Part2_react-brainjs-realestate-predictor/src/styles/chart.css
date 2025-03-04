@@ -1,0 +1,67 @@
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    font-family: Calibri, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #212121;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    overflow: hidden; /* Prevent content from extending outside */
+    max-height: 100%; /* Ensure it doesn't exceed parent height */
+    max-width: 600px; /* Ensure it doesn't exceed parent width */
+}
+
+.chart-title {
+    margin: 0 0 15px 0;
+    color: #212121;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.chart-wrapper {
+    position: relative;
+    flex: 1;
+    min-height: 0; /* Allow it to shrink if needed */
+}
+
+.message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+.message-text {
+    text-align: center;
+    color: #212121;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.prediction-message {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.prediction-message p {
+    margin: 0 0 10px 0;
+}
+
+.prediction-message p:last-child {
+    font-style: italic;
+    font-size: 12px;
+}
